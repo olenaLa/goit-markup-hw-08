@@ -1,0 +1,72 @@
+.hero {
+  color: $pr-wht-color;
+  text-align: center;
+  .hero-main {
+    @media screen and (min-width: 480px) {
+      width: auto;
+    }
+    @media screen and (max-width: 768px) {
+      height: 400px;
+      background-color: black;
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url(../images/hero.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+.hero-title {
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  @media screen and (min-width: 480px) {
+    margin: 0;
+    padding-top: 118px;
+    padding-bottom: 30px;
+
+    font-size: 26px;
+    line-height: 1.62;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-bottom: 46px;
+    padding-top: 200px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.main-button {
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 32px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: $pr-wht-color;
+  background-color: $accent-color;
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: 1px solid $accent-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background-color: $pr-wht-color;
+    font-family: inherit;
+    text-decoration: none;
+    border: 1px solid $accent-color;
+  }
+}

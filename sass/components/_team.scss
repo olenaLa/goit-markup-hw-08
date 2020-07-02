@@ -1,0 +1,88 @@
+.second-bcg {
+  background-color: $second-bcg-color;
+}
+.list-team {
+  @extend %list;
+
+  &-title {
+    color: $ttl-text-color;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+
+    line-height: 1.19;
+    @media screen and (min-width: 480px) {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+}
+.team-post {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.item-team {
+  text-align: center;
+
+  background-color: $pr-wht-color;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
+.item-team:not(:last-child) {
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
+}
+
+.list-social-link {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 24px;
+  justify-content: center;
+  .item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 12px;
+  width: 44px;
+  height: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $pr-wht-color;
+  fill: $icon-color;
+
+  border-radius: 50%;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $pr-wht-color;
+    fill: $pr-wht-color;
+    background-color: $accent-color;
+  }
+}

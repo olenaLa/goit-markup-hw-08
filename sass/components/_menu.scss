@@ -7,7 +7,13 @@
   .icon-cross {
     display: none;
   }
-
+  .icon-reper {
+    fill: $ttl-text-color;
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }

@@ -1,0 +1,28 @@
+.list-scope {
+  @extend %list;
+  &-title {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    margin: 0;
+    padding: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: center;
+
+    color: $pr-wht-color;
+    background-color: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  .item {
+    position: relative;
+    width: calc((100% - 60px) / 3);
+  }
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}

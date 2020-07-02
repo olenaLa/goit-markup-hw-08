@@ -28,7 +28,7 @@
                 aria-controls="menu-container"
                 data-menu-button
               >
-                <svg
+                <svg class="icon-reper"
                   width="24"
                   height="16"
                   aria-label="Переключатель мобильного меню"
@@ -99,8 +99,7 @@
               <svg class="features-icon">
                 <use href="./images/symbol-defs.svg#icon-antenna"></use>
               </svg>
-              <!-- <img src="./images/section-top/antenna-1.svg" alt="Антенна" /> -->
-              <h3 class="title">Внимание к деталям</h3>
+               <h3 class="title">Внимание к деталям</h3>
               <p>
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
@@ -143,8 +142,8 @@
         </div>
       </section>
       <!--Секция сфер деятельности-->
-      <section class="section">
-        <div class="container">
+      <section class="section ">
+        <div class="container scope">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list-scope">
             <li class="item">
@@ -195,9 +194,10 @@
               <img
                 src="./images/section-team/photo-smith.jpg"
                 alt="Фото Смит"
-                width="270"
-                height="260"
+                width="450"
+                
               />
+              <div class="team-mobile">
               <h3 class="list-team-title">Николай Кучеренко</h3>
               <p class="team-post">Product Designer</p>
               <ul class="list-social-link">
@@ -230,13 +230,13 @@
                   </a>
                 </li>
               </ul>
+              </div>
             </li>
             <li class="item-team">
               <img
                 src="./images/section-team/photo-stewart.jpg"
                 alt="Смартфон"
-                width="270"
-                height="260"
+                width="450"
               />
               <h3 class="list-team-title">Ольга Иванова</h3>
               <p class="team-post">Frontend Developer</p>
@@ -275,8 +275,7 @@
               <img
                 src="./images/section-team/photo-jakis.jpg"
                 alt="Интерфейс"
-                width="270"
-                height="260"
+                width="450"
               />
               <h3 class="list-team-title">Андрей Шевченко</h3>
               <p class="team-post">Marketing</p>
@@ -315,8 +314,7 @@
               <img
                 src="./images/section-team/photo-doe.jpg"
                 alt="Интерфейс"
-                width="270"
-                height="260"
+                width="450"
               />
               <h3 class="list-team-title">Иван Николаев</h3>
               <p class="team-post">UI Designer</p>
@@ -409,7 +407,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-flex">
-          <div>
+          <div class="footer-item">
             <div>
               <a href="./index.html" class="logo">
                 <b>Web&nbsp;<span class="logo-white">Studio</span></b>
@@ -425,7 +423,7 @@
               </a>
             </address>
           </div>
-          <div>
+          <div class="footer-item">
             <b class="footer-offer">Присоединяйтесь</b>
             <ul class="list-footer-soclink">
               <li class="item">
@@ -458,7 +456,7 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div class="footer-item">
             <b class="footer-offer">Подписаться на рассылку</b>
             <div class="footer-email">
               <input
