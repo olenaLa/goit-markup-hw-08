@@ -34,12 +34,17 @@
     font-weight: 400;
     line-height: 1.71;
   }
-  @media screen and (min-width: 1200px) {
-    .item {
-      width: calc((100% - 90px) / 4);
-    }
-    .item:not(:last-child) {
-      margin-right: 30px;
-    }
+  @media screen and (min-width: 480px) {
+  }
+  .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .item {
+    width: calc((100% - 90px) / 4);
+  }
+  .item:not(:last-child) {
+    margin-right: 30px;
   }
 }
