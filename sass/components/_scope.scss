@@ -19,13 +19,17 @@
 .list-scope {
   @extend %list;
   display: flex;
-
-  .item {
-    position: relative;
-    width: calc((100% - 60px) / 3);
-    margin-right: 30px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    .item {
+      position: relative;
+      width: calc((100% - 90px) / 3);
+      margin-right: 30px;
+    }
   }
 }
+
 .list-scope-title {
   position: absolute;
   bottom: 0;

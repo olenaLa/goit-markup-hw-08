@@ -15,67 +15,67 @@
     <!-- Шапка сайта -->
     <header class="page-header">
       <div class="container main-nav">
-        
-          <div class="nav-common">
-            <a href="./index.html" class="logo">
-              <b>Web&nbsp;<span class="logo-regular">Studio</span></b>
-            </a>
-            <div class="menu">
-              <button
-                type="button"
-                class="menu-button is-open"
-                aria-expanded="false"
-                aria-controls="menu-container"
-                data-menu-button
+        <div class="nav-common">
+          <a href="./index.html" class="logo">
+            <b>Web&nbsp;<span class="logo-regular">Studio</span></b>
+          </a>
+          <div class="menu">
+            <button
+              type="button"
+              class="menu-button is-open"
+              aria-expanded="false"
+              aria-controls="menu-container"
+              data-menu-button
+            >
+              <svg
+                class="icon-reper"
+                width="24"
+                height="16"
+                aria-label="Переключатель мобильного меню"
               >
-                <svg class="icon-reper"
-                  width="24"
-                  height="16"
-                  aria-label="Переключатель мобильного меню"
-                >
-                  <use
-                    class="icon-cross"
-                    href="./images/symbol-defs.svg#icon-icon-close"
-                  ></use>
-                  <use
-                    class="icon-menu"
-                    href="./images/symbol-defs.svg#icon-icon-menu"
-                  ></use>
-                </svg>
-              </button>
-            </div>
+                <use
+                  class="icon-cross"
+                  href="./images/symbol-defs.svg#icon-icon-close"
+                ></use>
+                <use
+                  class="icon-menu"
+                  href="./images/symbol-defs.svg#icon-icon-menu"
+                ></use>
+              </svg>
+            </button>
           </div>
-          
-          <div class="menu-container" id="menu-container" data-menu>
-            <nav class="left-nav content"></nav>
-          <ul class="list-site-nav">
+        </div>
+
+        <div class="menu-container" id="menu-container" data-menu>
+          <nav class="left-nav content">
+            <ul class="list-site-nav">
+              <li class="item">
+                <a href="./index.html" class="link current">Студия</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link">Портфолио</a>
+              </li>
+              <li class="item"><a href="" class="link">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="list-auth-nav">
             <li class="item">
-              <a href="./index.html" class="link current">Студия</a>
+              <a href="mailto:info@devstudio.com" class="auth-nav-contact">
+                <svg class="icon-nav">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                <span>info@devstudio.com</span>
+              </a>
             </li>
             <li class="item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
+              <a href="tel:380961111111" class="auth-nav-contact">
+                <svg class="icon-nav">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                <span>+38 096 111 11 11</span>
+              </a>
             </li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
-        </nav>
-        <ul class="list-auth-nav">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="auth-nav-contact">
-              <svg class="icon-nav">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              <span>info@devstudio.com</span>
-            </a>
-          </li>
-          <li class="item">
-            <a href="tel:380961111111" class="auth-nav-contact">
-              <svg class="icon-nav">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              <span>+38 096 111 11 11</span>
-            </a>
-          </li>
-        </ul>
         </div>
       </div>
     </header>
@@ -96,12 +96,12 @@
           <h2 class="section-title is-hidden">Особенности</h2>
           <ul class="list-features">
             <li class="item">
-              <div class=""features-container>
-              <svg class="features-icon">
-                <use href="./images/symbol-defs.svg#icon-antenna"></use>
-              </svg>
+              <div class="" features-container>
+                <svg class="features-icon">
+                  <use href="./images/symbol-defs.svg#icon-antenna"></use>
+                </svg>
               </div>
-               <h3 class="title">Внимание к деталям</h3>
+              <h3 class="title">Внимание к деталям</h3>
               <p>
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
@@ -144,7 +144,7 @@
         </div>
       </section>
       <!--Секция сфер деятельности-->
-      <section class="section ">
+      <section class="section">
         <div class="container scope">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list-scope">
@@ -194,51 +194,63 @@
           <ul class="list-team">
             <li class="item-team">
               <img
-                srcset="./images/section-team/photo-smith-480.jpg 1x,
-                ./images/section-team/photo-smith2x-480.jpg 2x,"
+                srcset="
+                  ./images/section-team/photo-smith-480.jpg   1x,
+                  ./images/section-team/photo-smith2x-480.jpg 2x,
+
+                "
                 src="./images/section-team/photo-smith-480.jpg"
                 alt="Фото Смит"
                 width="480"
               />
               <div class="team-mobile">
-              <h3 class="list-team-title">Николай Кучеренко</h3>
-              <p class="team-post">Product Designer</p>
-              <ul class="list-social-link">
-                <li class="item">
-                  <a href="" class="social-item">
-                    <svg class="icon-social-link" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="item">
-                  <a href="" class="social-item"
-                    ><svg class="icon-social-link" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="item">
-                  <a href="" class="social-item"
-                    ><svg class="icon-social-link" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="item">
-                  <a href="" class="social-item"
-                    ><svg class="icon-social-link" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+                <h3 class="list-team-title">Николай Кучеренко</h3>
+                <p class="team-post">Product Designer</p>
+                <ul class="list-social-link">
+                  <li class="item">
+                    <a href="" class="social-item">
+                      <svg class="icon-social-link" width="20" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="" class="social-item"
+                      ><svg class="icon-social-link" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="" class="social-item"
+                      ><svg class="icon-social-link" width="20" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="" class="social-item"
+                      ><svg class="icon-social-link" width="20" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="item-team">
               <img
-                srcset="./images/section-team/photo-stewart-480.jpg 1x,
-                ./images/section-team/photo-stewart2x-480.jpg 2x,"
+                srcset="
+                  ./images/section-team/photo-stewart-480.jpg   1x,
+                  ./images/section-team/photo-stewart2x-480.jpg 2x,
+
+                "
                 src="./images/section-team/photo-smith-480.jpg"
                 alt="Фото Смит"
                 width="480"
@@ -278,8 +290,11 @@
             </li>
             <li class="item-team">
               <img
-                srcset="./images/section-team/photo-jakis-480.jpg 1x,
-                ./images/section-team/photo-jakis2x-480.jpg 2x,"
+                srcset="
+                  ./images/section-team/photo-jakis-480.jpg   1x,
+                  ./images/section-team/photo-jakis2x-480.jpg 2x,
+
+                "
                 src="./images/section-team/photo-smith-480.jpg"
                 alt="Фото Смит"
                 width="480"
@@ -319,8 +334,11 @@
             </li>
             <li class="item-team">
               <img
-               srcset="./images/section-team/photo-doe-480.jpg 1x,
-                ./images/section-team/photo-doe2x-480.jpg 2x,"
+                srcset="
+                  ./images/section-team/photo-doe-480.jpg   1x,
+                  ./images/section-team/photo-doe2x-480.jpg 2x,
+
+                "
                 src="./images/section-team/photo-smith-480.jpg"
                 alt="Фото Смит"
                 width="480"
