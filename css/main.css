@@ -269,11 +269,13 @@ body {
   padding-right: 15px;
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
   .container.scope {
     display: none;
@@ -289,6 +291,10 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    padding-bottom: 94px;
+  }
+  .container.scope {
+    padding-top: 0;
   }
 }
 
@@ -762,13 +768,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .container.scope {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
 .section-title {
   margin-bottom: 50px;
   color: #212121;
@@ -786,10 +785,6 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .list-scope {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
   .list-scope .item {
     position: relative;
     width: calc((100% - 90px) / 3);
@@ -854,28 +849,23 @@ img {
 
 .item-team {
   text-align: center;
+  width: 450px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (min-width: 480px) {
-  .item-team {
-    width: 450px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .item-team {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 4 * 15px) / 2);
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .item-team {
-    width: calc((100% - 90px) / 4);
+    width: calc((100% - 8 * 15px) / 4);
   }
 }
 
@@ -942,60 +932,60 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -15px;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .list-client .item {
-    width: calc((100% - 4 * 15px) / 2);
-    margin-right: 15px;
-    margin-bottom: 15px;
+@media screen and (min-width: 480px) and (min-width: 1200px) {
+  .list-client {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
+}
+
+.list-client .item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: calc((100% - 4 * 15px) / 2);
 }
 
 @media screen and (min-width: 768px) {
   .list-client .item {
     width: calc((100% - 6 * 15px) / 3);
-    margin-right: 15px;
-    margin-bottom: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .list-client .item {
-    width: calc((100% - 8 * 15px) / 6);
+    width: calc((100% - 10 * 15px) / 6);
     margin-bottom: 0;
+    margin-right: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .list-client .item:nth-last-child(-n + 2) {
+  .list-client:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .list-client .item:nth-last-child(-n + 3) {
+  .list-client:nth-last-child(-n + 3) {
     margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .list-client .item:nth-child(2n) {
+  .list-client:nth-child(2n) {
     margin-right: 0;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .list-client .item:nth-child(3n) {
+  .list-client:nth-child(3n) {
     margin-right: 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .list-client .item:not(:last-child) {
-    margin-right: 15px;
   }
 }
 
@@ -1043,6 +1033,7 @@ img {
           align-items: center;
   text-align: center;
   width: 200px;
+  height: 50px;
   padding: 10px 28px;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -1092,7 +1083,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .footer-email {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1200,6 +1191,7 @@ img {
 
 .footer-offer {
   display: block;
+  text-align: start;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;

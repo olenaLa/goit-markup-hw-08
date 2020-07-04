@@ -10,17 +10,23 @@ body {
   padding-right: 15px;
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width: 480px) {
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: 767px) {
     &.scope {
       display: none;
     }
-    width: 480px;
+    max-width: 480px;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
   }
   @media screen and (min-width: 1200px) {
+    &.scope {
+      padding-top: 0;
+    }
     width: 1200px;
+    padding-bottom: 94px;
   }
 }
 .main-nav {

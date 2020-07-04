@@ -2,10 +2,6 @@
   @media screen and (max-width: 1199px) {
     display: none;
   }
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 .section-title {
   margin-bottom: 50px;
@@ -20,8 +16,6 @@
   @extend %list;
   display: flex;
   @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
     .item {
       position: relative;
       width: calc((100% - 90px) / 3);
