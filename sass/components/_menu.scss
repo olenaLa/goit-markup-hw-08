@@ -7,6 +7,9 @@
   .icon-cross {
     display: none;
   }
+  .icon-menu {
+    display: block;
+  }
   .icon-reper {
     fill: $ttl-text-color;
     &:hover,
@@ -18,10 +21,10 @@
     display: none;
   }
 }
-
 .menu-button.is-open .icon-cross {
-  display: block;
-}
-.menu-button.is-open .icon-menu {
   display: none;
+}
+
+.menu-button.is-open .icon-menu {
+  display: block;
 }
