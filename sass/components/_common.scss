@@ -8,26 +8,16 @@ body {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  @media screen and (max-width: 480px) and (min-width: 480px) {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 480px) {
     &.scope {
       display: none;
     }
     width: 480px;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
   @media screen and (min-width: 768px) {
-    &.scope {
-      display: none;
-    }
     width: 768px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  @media screen and (max-width: 768px) {
-    &.scope {
-      display: none;
-    }
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
