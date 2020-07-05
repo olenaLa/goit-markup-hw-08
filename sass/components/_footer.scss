@@ -1,3 +1,110 @@
+.footer {
+  color: $pr-wht-color;
+  background-color: $footer-bcg-color;
+  &-contact {
+    text-decoration: none;
+  }
+  &-item {
+    text-align: center;
+  }
+  &-item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
+}
+
+.footer-flex {
+  display: flex;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 48px;
+    padding-bottom: 28px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 48px;
+    padding-bottom: 28px;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  .item:not(:last-child) {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 9px;
+  }
+  .logo {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+.footer-contact {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.footer-offer {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
+}
+.list-footer-soclink {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+  .item:not(:last-child) {
+    margin-right: 11px;
+  }
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $pr-wht-color;
+  border-radius: 50%;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $pr-wht-color;
+    background-color: $accent-color;
+  }
+}
+.footer-social-link {
+  display: block;
+  fill: currentColor;
+}
 .footer-button {
   display: flex;
   align-items: center;
@@ -67,98 +174,4 @@
   @media screen and (min-width: 480px) {
     margin-bottom: 20px;
   }
-}
-.footer {
-  color: $pr-wht-color;
-  background-color: $footer-bcg-color;
-  &-contact {
-    text-decoration: none;
-  }
-  &-item {
-    text-align: center;
-  }
-  &-item:not(:last-child) {
-    margin-bottom: 60px;
-  }
-  .logo {
-    margin-bottom: 20px;
-  }
-}
-
-.footer-flex {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    padding-top: 48px;
-    padding-bottom: 28px;
-    align-items: baseline;
-    justify-content: space-between;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-}
-.footer-address {
-  display: flex;
-  flex-direction: column;
-  font-style: normal;
-  .item:not(:last-child) {
-    display: block;
-    margin-top: 0;
-    margin-bottom: 9px;
-  }
-
-  .logo {
-    display: block;
-    margin-bottom: 10px;
-  }
-}
-
-.footer-contact {
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
-}
-.footer-offer {
-  display: block;
-  text-align: start;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-.list-footer-soclink {
-  @extend %list;
-  display: flex;
-  justify-content: center;
-  .item:not(:last-child) {
-    margin-right: 11px;
-  }
-}
-.social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: $pr-wht-color;
-  border-radius: 50%;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: $pr-wht-color;
-    background-color: $accent-color;
-  }
-}
-.footer-social-link {
-  display: block;
-  fill: currentColor;
 }

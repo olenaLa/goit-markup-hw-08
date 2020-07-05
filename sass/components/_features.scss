@@ -1,20 +1,61 @@
 .list-features {
+  @extend %list;
   display: inline-block;
-
+  justify-content: space-around;
+  margin: -15px;
   @media screen and (min-width: 768px) {
+    &:nth-child(2n) {
+      padding-left: 0;
+    }
     display: flex;
     flex-wrap: wrap;
   }
-  .item {
-    text-align: center;
-    margin: 15px;
-    width: 480px;
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.features-item {
+  width: 480px;
+  line-height: 1.71;
+  padding-bottom: 30px;
+
+  .title {
+    font-weight: 700;
+    color: $ttl-text-color;
+    line-height: 1.14;
+    text-transform: uppercase;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 767px) {
       text-align: start;
-      width: calc((100% - 4 * 15px) / 2);
     }
-    @media screen and (min-width: 1200px) {
-      width: calc((100% - 8 * 15px) / 4);
-    }
+  }
+  @media screen and (min-width: 768px) {
+    text-align: start;
+    width: calc((100% - 4 * 15px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 8 * 15px) / 4);
+  }
+}
+.features-icon {
+  display: inline-block;
+  padding: 0;
+  margin: auto;
+  height: 120px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  justify-content: center;
+  background-color: $second-bcg-color;
+  border-radius: 4px;
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
   }
 }
